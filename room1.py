@@ -10,10 +10,6 @@ def rom1():
     if php <= 0:
         print("YOU LOST")
         print("you will get them next time")
-        input("NOT")
-        while php >= 0:
-            print("HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA")
-            print("AHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAH")
         exit()
     print("The enemy stands in your way")
     print("hp:", php)
@@ -29,6 +25,7 @@ def rom1():
     
     if valg == "C":
         talk()
+
     if valg == "D":
         defence()
 
@@ -183,8 +180,8 @@ def rom2():
     global ehp
     if ehp <= 0:
         print("the enemy had been defeated")
-        print("you gained 10 exp")
-        print("you gain 0 bitches")
+        print("you gained", php, "exp")
+        print("you gain 0 friends")
         exit()
     rng = random.randint(1,6)
     if rng == 1:
